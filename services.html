@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu ir Uslugi – Daržo dubuo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Daržo dubuo</a>
+            <nav class="nav-menu">
+                <a href="index.html">Pagrindinis</a>
+                <a href="about.html">Apie mus</a>
+                <a href="services.html" class="active">Meniu & Uslugi</a>
+                <a href="contacts.html">Kontaktai</a>
+                <a href="services.html#order" class="btn-nav">Užsisakyti</a>
+            </nav>
+            <button class="hamburger" aria-label="Meniu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Mūsų Meniu</h1>
+                <p>Švieži, sezoniniai ir 100% augaliniai patiekalai</p>
+            </div>
+        </section>
+
+        <section class="container section-padding">
+            <div class="grid-2">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1540420773420-3366772f4999');"></div>
+                    <div class="service-info">
+                        <h3>Sezoniniai augaliniai Buddha dubunėliai (Buddha Bowls)</h3>
+                        <p>Kas mėnesį atsinaujinantys bolivinės balandos dubunėliai su traškiais daržovėmis, tofu, naminiais padažais ir sėklomis.</p>
+                        <span class="price">10.50 €</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd');"></div>
+                    <div class="service-info">
+                        <h3>Veganiški suši suktiniai ir skrebučiai</h3>
+                        <p>Originalūs receptai, puikiai tinka greitiems ir sveikiems pietums ar užkandžiui.</p>
+                        <span class="price">8.00 €</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c');"></div>
+                    <div class="service-info">
+                        <h3>Sveikuoliški desertai be miltų, laktozės ir cukraus</h3>
+                        <p>Mėgaukitės saldumu be jokių sąžinės graužaties – natūralūs ingredientai ir nuostabus skonis.</p>
+                        <span class="price">4.50 €</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1540420773420-3366772f4999');"></div>
+                    <div class="service-info">
+                        <h3>Lėto spaudimo sultys, glotnučiai ir naminė kombučia</h3>
+                        <p>Energijos užtaisas visai dienai iš šviežių vaisių, uogų ir daržovių.</p>
+                        <span class="price">5.00 €</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <div class="container">
+                <div class="order-box">
+                    <h2>Užsisakykite maistą išsinešimui</h2>
+                    <p>Užpildykite formą ir paruošime jūsų užsakymą atsiėmimui Tuskulėnų g. 15A.</p>
+                    <form id="orderForm" class="order-form">
+                        <div class="form-group">
+                            <input type="text" id="orderName" placeholder="Jūsų vardas" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="orderPhone" placeholder="Telefono numeris" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="orderDish" required>
+                                <option value="">Pasirinkite patiekalą</option>
+                                <option value="Buddha Bowl">Sezoninis Buddha dubunėlis</option>
+                                <option value="Sushi/Skrebučiai">Veganiški suši suktiniai / Skrebučiai</option>
+                                <option value="Desertai">Sveikuoliškas desertas</option>
+                                <option value="Gėrimai">Glotnutis / Kombučia</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Pateikti užsakymą</button>
+                    </form>
+                    <div id="orderSuccess" class="success-message" style="display:none;">
+                        Ačiū! Jūsų užsakymas gautas. Susisieksime su jumis patvirtinimui.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>🌱 Daržo dubuo</h3>
+                <p>Augalinis maistas jūsų kūnui ir sielai Vilniuje.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kontaktai</h4>
+                <p>Tuskulėnų g. 15A, Vilnius</p>
+                <p>Tel: +370 661 57799</p>
+                <p>I-VII 09:00–21:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sekite mus</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/darzodubuo" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Daržo dubuo. Visos teisės saugomos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
